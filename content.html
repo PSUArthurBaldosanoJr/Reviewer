@@ -396,10 +396,119 @@
                     <h1>Computer Programming 2</h1>
                     <img src="https://surry.edu/uploads/images/_videoPoster/computer-programmer.jpg" class="img" width="500" height="300">
                 </div>
-
-                <h1>Lesson 1</h1><br>
-                <h2>Transforming Sequences</h2><br>
-
+                <header>
+            <h1>Week 01</h1>
+            <h3>Transforming Sequences</h3>
+            <hr>
+            
+        </header>
+        <main>
+            <h4>Learning Objectives</h4>
+            <ul>
+                <li>Undersatnd the concept of mutability</li>
+                <li>Master common list manipulation techniques, including deletion and slicing.</li>
+                <li>Grasp the basics of objects and references to set the stage for aliasing and object-oriented programming.</li>
+            </ul>
+            <br>
+            <p><b>Mutability:</b> Objects that can change their state after creation.</p>
+            <p><i>Example:</i></p>
+            <ul>
+                <li>Lists</li>
+                <li>Dictionaries</li>
+            </ul>
+            <p><b>Immutability:</b> Objects that cannot change their state after creation.</p>
+            <p><i>Example:</i></p>
+            <ul>
+                <li>Strings</li>
+                <li>Tuples</li>
+            </ul>
+            <br>
+            <p>Mutability impacts <b>performance</b>, <b>memory</b>, and <b>thread safety</b>.</p>
+            <br>
+            <img src="1.png">
+            <br>
+            <br>
+            <hr>
+            <h3>Mutability: Performance</h3>
+            <p><b>Mutable Types:</b></p>
+            <ul>
+                <li><b>Reusability of memory.</b> Allow modification without creating a new object. Efficient for frequent updates to the same data structure. May need more memory if they grow too big.</li>
+            </ul>
+            <p><b>Immutable Types:</b></p>
+            <ul>
+                <li><b>Copy Overhead.</b> Requires creating a new object for every change, that result to increasing computational overhead. Predictable behavior and less risk in accidental side effects. Higher memory usage and slower operations for frequent updates.</li>
+            </ul>
+            <br>
+            <h3>Mutability: Memory</h3>
+            <p><b>Mutable Types:</b></p>
+            <ul>
+                <li><b>Shared References.</b> Multiple variables can point to the same mutable object, reducing memory usage. Unintended changes by one reference affect all references.</li>
+            </ul>
+            <p><b>Immutable Types:</b></p>
+            <ul>
+                <li><b>Object Duplication.</b> Stored separately in memory. Changing requires more memory. Each object is independent, avoiding unintended side effects.</li>
+            </ul>
+            <br>
+            <h3>Mutability: Thread safety</h3>
+            <p><b>Mutable Types:</b></p>
+            <ul>
+                <li><b>Risk of Data Races.</b> If a male object is shared between threads, concurrent modifications can lead to unpredictable behavior or data corruption.</li>
+            </ul>
+            <p><b>Immutable Types:</b></p>
+            <ul>
+                <li><b>Thread-Safe by Default.</b> Immutable objects are inherently thread-safe because their state cannot change after creation. Simplifies concurrent programming by avoiding data races.</li>
+            </ul>
+            <br>
+            <hr>
+            <h3>Adding Elements <i>(append(), insert(), extend())</i></h3>
+            <ul>
+                <li> <p><b>append</b>(element) - Adds a single element to the end of the list.</p></li>
+                <li><p><b>insert</b>(index, element) - Inserts an element at a specific index in the list. The indices of subsequent elements are shifted to the right.</p></li>
+                <li><p><b>Append</b>(element) - Adds a single element to the end of the list.</p></li>
+                <li><p><b>Extend</b>(iterable) - Extends the list by adding all elements from another iterable. (e.g., list, tuple, set). Each element of the iterable is added individually to the end of the list.</p></li>
+            </ul>
+            <center><img src="2.png"></center>
+            <br>
+            <hr>
+            <br>
+            <h3>Deleting Elements <i>(remove(), del(), pop(), slicing())</i></h3>
+            <ul>
+                <li> <p><b>remove</b>(value) - Removes the first occurence of a specified value from the list. Raises a ValueError if the value does not exist</p></li>
+                <li><p><b>del list</b>[index, range] - Deletes elements or slices from the listusing an index or range. It can also delete the entire list.</p></li>
+                <li><p><b>pop</b>() - Removes and returns the element at a specified index (default is the last element). Raises an IndexError if the list is empty or the index is out of range.</p></li>
+                <li><p><b>slice</b> - Creates a new list by extracting a subset of elements using the slice notation (start:stop:step). Does not modify the original list.</p></li>
+            </ul>
+            <br>
+            <center><img src="3.png"></center>
+            <br>
+            <br>
+            <hr>
+            <h3>Alias</h3>
+            <ul>
+                <li>In Python, <b>aliasing</b> occurs when two or more variables reference the same object in memory. This means that a change to the object through one variable will be reflectes when accessed through the other variables.</li>
+                <li>Alliasing is common with lists, dictionaries, and other mutable objects.</li>
+                <li>Be cautious of unintended modifications when working with shared references.</li>
+            </ul>
+            <br>
+            <center>
+                <img src="4.png"></center>
+            <br>
+            <br>
+            <hr>
+            <br>
+            <h3>Printing List</h3>
+            <center><img src="5.png"></center>
+            <br>
+            <br>
+            <hr>
+            <h3>String to List</h3>
+            <center><img src="6.png"></center>
+            <br>
+            <br>
+            <hr>
+        </main>
+        <footer>
+            <p><span style="background-color: rgb(212, 40, 40);"> created by bb ni jun</span></p>
                            
             </div>
 
@@ -638,7 +747,9 @@
                 </p>
                 <img src="Screenshot 2025-02-16 105851.png" class="img" width="650" height="390">
 
-            </div>
+            </div>
+
+
         </div>
 
         <hr>
