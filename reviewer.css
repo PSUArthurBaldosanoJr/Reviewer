@@ -61,7 +61,19 @@ h1{
 .subj_button:hover{
     background-color: #4f332f;
 }
-
+.backtotop{
+    background-color: #4e2723;
+    color: white;
+    border: 1px solid black;
+    border-radius: 15px;
+    padding: 8px;
+    cursor: pointer;
+    display: none;
+    position: fixed;
+}
+.backtotop:hover{
+    background-color: #4f332f;
+}
 .section{
     display: none;
     background-color: rgb(255, 255, 255, 0.93);
